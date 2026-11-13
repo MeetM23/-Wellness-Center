@@ -22,32 +22,6 @@ export const AboutFounder: React.FC = () => {
       </div>
 
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
-        {/* Section Header */}
-        <div className="max-w-2xl mb-12 sm:mb-16">
-          <span className="text-label text-terracotta">
-            {isGujarati ? "સ્થાપક અને કોચ પરિચય" : "Meet Your Coach"}
-          </span>
-          <h2 className="heading-section mt-2">
-            {isGujarati ? (
-              <>
-                પોતાના અંગત અનુભવથી{" "}
-                <span className="text-primary font-semibold">અન્યને માર્ગદર્શન.</span>
-              </>
-            ) : (
-              <>
-                Guidance Rooted in{" "}
-                <span className="text-primary font-semibold">Real Personal Experience.</span>
-              </>
-            )}
-          </h2>
-          <p className="text-subtitle mt-3">
-            {isGujarati
-              ? "કોચ સરવૈયા શક્તિસિંહ જશુભાએ પોતે ૧૩ કિલો વજન ઘટાડીને સાબિત કર્યું કે સાચી જીવનશૈલીથી કાયમી સ્ફૂર્તિ શક્ય છે."
-              : "Coach Sarvaiya Shaktisinh Jashubha leads with authenticity, having transformed his own wellness from 85 kg to 72 kg."}
-          </p>
-        </div>
-
         {/* 2-Column Grid: Coach Visual & Bio */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           
