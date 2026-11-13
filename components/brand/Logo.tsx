@@ -12,10 +12,11 @@ interface LogoProps {
 export const Logo: React.FC<LogoProps> = ({ variant = "default", size = "md" }) => {
   const isDark = variant === "dark";
 
+  // Generous, prominent logo heights so Gujarati calligraphy is clearly legible
   const heightClasses = {
-    sm: "h-9 sm:h-10",
-    md: "h-11 sm:h-12",
-    lg: "h-14 sm:h-16",
+    sm: "h-10 sm:h-11 md:h-12",
+    md: "h-13 sm:h-15 md:h-16 lg:h-[66px]",
+    lg: "h-16 sm:h-20 md:h-24",
   };
 
   return (
@@ -24,8 +25,8 @@ export const Logo: React.FC<LogoProps> = ({ variant = "default", size = "md" }) 
         <Image
           src={isDark ? "/images/brand/raa-logo-dark.png" : "/images/brand/raa-logo.png"}
           alt="રા વેલનેસ સેન્ટર"
-          width={240}
-          height={85}
+          width={280}
+          height={95}
           className={`${heightClasses[size]} w-auto object-contain`}
           priority
         />
