@@ -13,7 +13,7 @@ export const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      setIsScrolled(window.scrollY > 15);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -34,11 +34,11 @@ export const Navbar: React.FC = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-white/95 backdrop-blur-md shadow-xs py-2 sm:py-2.5 border-b border-charcoal-border/80"
-          : "bg-transparent py-3 sm:py-4"
+          : "bg-white/90 sm:bg-transparent backdrop-blur-md sm:backdrop-blur-none py-2.5 sm:py-3.5 border-b border-charcoal-border/40 sm:border-transparent"
       }`}
     >
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
+      <div className="max-w-[1200px] mx-auto px-3.5 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between gap-2">
           {/* Brand Identity */}
           <Logo variant="light" size="md" />
 
@@ -81,21 +81,21 @@ export const Navbar: React.FC = () => {
           </div>
 
           {/* Mobile Right Controls */}
-          <div className="flex items-center gap-2 lg:hidden">
+          <div className="flex items-center gap-1.5 sm:gap-2 lg:hidden shrink-0">
             {/* Mobile Language Switcher */}
             <button
               onClick={toggleLanguage}
               aria-label="Toggle language"
-              className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-full text-xs font-sans font-medium text-charcoal bg-white border border-charcoal-border/80 shadow-xs"
+              className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-full text-xs font-sans font-medium text-charcoal bg-white border border-charcoal-border/80 shadow-xs active:bg-ivory"
             >
-              <Globe className="w-3 h-3 text-primary" />
-              <span>{isGujarati ? "EN" : "ગુજ"}</span>
+              <Globe className="w-3.5 h-3.5 text-primary" />
+              <span className="font-semibold">{isGujarati ? "EN" : "ગુજ"}</span>
             </button>
 
             {/* Mobile Menu Toggle Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-xl text-charcoal hover:bg-black/5 transition-colors"
+              className="p-1.5 sm:p-2 rounded-xl text-charcoal hover:bg-black/5 transition-colors focus:outline-none"
               aria-label="Toggle navigation menu"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -143,4 +143,3 @@ export const Navbar: React.FC = () => {
     </header>
   );
 };
-

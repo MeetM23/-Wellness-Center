@@ -18,7 +18,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section id="hero" className="relative pt-28 pb-20 md:pt-36 md:pb-24 lg:pt-40 lg:pb-28 bg-ivory overflow-hidden">
+    <section id="hero" className="relative pt-32 pb-20 sm:pt-36 sm:pb-24 lg:pt-40 lg:pb-28 bg-ivory overflow-hidden">
       {/* Full-width Background Image with Warm Palette Overlay */}
       <div className="absolute inset-0 z-0 overflow-hidden" aria-hidden="true">
         <Image
@@ -37,8 +37,8 @@ export const Hero: React.FC = () => {
 
       {/* Shapes Gallery Background Art — Intentional, Balanced & Subtle */}
       <div className="absolute inset-0 pointer-events-none select-none overflow-hidden z-[1]" aria-hidden="true">
-        {/* Shape 41: Rosette Mandala - Upper Left side (clear of family photo on right) */}
-        <div className="absolute -top-10 -left-10 lg:top-8 lg:left-8 text-primary">
+        {/* Shape 41: Rosette Mandala - Upper Left side (hidden on mobile to keep navbar & logo pristine) */}
+        <div className="absolute top-10 left-8 text-primary hidden md:block">
           <ShapeRosetteMandala className="w-56 h-56 sm:w-72 sm:h-72 lg:w-96 lg:h-96 text-primary" opacity={0.06} />
         </div>
         {/* Shape 21: Curved Star Sparkle - Left Accent */}
@@ -54,7 +54,7 @@ export const Hero: React.FC = () => {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 backdrop-blur-xs border border-charcoal-border/80 shadow-xs mb-6 max-w-full">
             <ShapeCurvedStar className="w-3.5 h-3.5 text-primary shrink-0" opacity={0.8} />
             <span className="text-[11px] sm:text-xs font-medium text-charcoal truncate">
-              {isGujarati ? "રા વેલનેસ સેન્ટર • વાતળિયા, તળાજા, ભાવનગર" : "Raa Wellness Center • Vataliya, Talaja, Bhavnagar"}
+              {isGujarati ? "રા વેલનેસ સેન્ટર • વાતળિયા, તળાજા, ભાવનગર" : "રા Wellness Center • Vataliya, Talaja, Bhavnagar"}
             </span>
           </div>
 

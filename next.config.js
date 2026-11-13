@@ -2,9 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    formats: ['image/avif', 'image/webp'],
+    unoptimized: true,
   },
+  outputFileTracing: false,
 };
 
 module.exports = nextConfig;
-
