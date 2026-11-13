@@ -86,7 +86,7 @@ export const Navbar: React.FC = () => {
             <button
               onClick={toggleLanguage}
               aria-label="Toggle language"
-              className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-full text-xs font-sans font-medium text-charcoal bg-white border border-charcoal-border/80 shadow-xs active:bg-ivory"
+              className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-full text-[13px] sm:text-sm font-sans font-medium text-charcoal bg-white border border-charcoal-border/80 shadow-xs active:bg-ivory shrink-0"
             >
               <Globe className="w-3.5 h-3.5 text-primary" />
               <span className="font-semibold">{isGujarati ? "EN" : "ગુજ"}</span>

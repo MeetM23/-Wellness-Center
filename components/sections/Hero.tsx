@@ -18,7 +18,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section id="hero" className="relative pt-32 pb-20 sm:pt-36 sm:pb-24 lg:pt-40 lg:pb-28 bg-ivory overflow-hidden">
+    <section id="hero" className="relative pt-28 pb-14 sm:pt-32 sm:pb-20 lg:pt-40 lg:pb-28 bg-ivory overflow-hidden">
       {/* Full-width Background Image with Warm Palette Overlay */}
       <div className="absolute inset-0 z-0 overflow-hidden" aria-hidden="true">
         <Image
@@ -53,7 +53,7 @@ export const Hero: React.FC = () => {
           {/* Pill Eyebrow with Small Shapes Gallery Sparkle */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 backdrop-blur-xs border border-charcoal-border/80 shadow-xs mb-6 max-w-full">
             <ShapeCurvedStar className="w-3.5 h-3.5 text-primary shrink-0" opacity={0.8} />
-            <span className="text-[11px] sm:text-xs font-medium text-charcoal truncate">
+            <span className="text-[13px] sm:text-[14px] font-medium text-charcoal truncate">
               {isGujarati ? "રા વેલનેસ સેન્ટર • વાતળિયા, તળાજા, ભાવનગર" : "રા Wellness Center • Vataliya, Talaja, Bhavnagar"}
             </span>
           </div>
@@ -103,15 +103,15 @@ export const Hero: React.FC = () => {
 
           {/* Trust Indicators - Wrap cleanly on mobile */}
           <div className="pt-6 sm:pt-7 border-t border-charcoal-border/60 grid grid-cols-1 sm:flex sm:flex-wrap gap-x-6 gap-y-3">
-            <div className="flex items-center gap-2 text-xs sm:text-sm text-charcoal-muted">
+            <div className="flex items-center gap-2.5 text-[14px] sm:text-[15px] text-charcoal">
               <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
               <span>{isGujarati ? "૧૩ કિલો અંગત ફેટ લોસ અનુભવ" : "13 kg Personal Fat Loss Experience"}</span>
             </div>
-            <div className="flex items-center gap-2 text-xs sm:text-sm text-charcoal-muted">
+            <div className="flex items-center gap-2.5 text-[14px] sm:text-[15px] text-charcoal">
               <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
               <span>{isGujarati ? "૧-ઓન-૧ પ્રમાણિત માર્ગદર્શન" : "1-on-1 Personalized Coaching"}</span>
             </div>
-            <div className="flex items-center gap-2 text-xs sm:text-sm text-charcoal-muted">
+            <div className="flex items-center gap-2.5 text-[14px] sm:text-[15px] text-charcoal">
               <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
               <span>{isGujarati ? "કોઈ ભૂખમરો કે કડક દવાઓ નહિ" : "Zero Starvation or Harmful Pills"}</span>
             </div>
