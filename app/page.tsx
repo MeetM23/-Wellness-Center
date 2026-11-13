@@ -1,6 +1,5 @@
 import { Hero } from "@/components/sections/Hero";
 import { WellnessApproach } from "@/components/sections/WellnessApproach";
-import { AboutFounder } from "@/components/sections/AboutFounder";
 import { TransformationShowcase } from "@/components/sections/TransformationShowcase";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { FAQSection } from "@/components/sections/FAQSection";
@@ -11,7 +10,6 @@ export default function HomePage() {
     <div className="flex flex-col">
       <Hero />
       <WellnessApproach />
-      <AboutFounder />
       <TransformationShowcase />
       <Testimonials />
       <FAQSection />
@@ -19,4 +17,3 @@ export default function HomePage() {
     </div>
   );
 }
-
